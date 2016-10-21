@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="L.action" extends="struts-default">
+    	<action name="search" class="L.action.LibraryAction" method="seraching">
+    	<result name="success">LibraryAction.jsp</result>
+    	<result name="error">error.jsp</result>
+    	</action>
+    	
+    	
+    	<action name="detail" class="L.action.LibraryAction" method="detail">
+    	<result name="input">LibraryAction.jsp</result>
+    	<result name="error">deti.jsp</result>
+    	</action>
+    	  	
+    	<action name="delete" class="L.action.LibraryAction" method="delete">
+    	<result name="input">LibraryAction.jsp</result>
+    	<result name="error">deti.jsp</result>
+    	</action>
+    </package>
+</struts>   	
+      	
+    
+   
+    	
